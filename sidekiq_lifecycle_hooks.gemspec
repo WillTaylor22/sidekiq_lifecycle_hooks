@@ -12,7 +12,7 @@ Gem::Specification.new do |spec|
   spec.homepage = "https://github.com/WillTaylor22/sidekiq_lifecycle_hooks."
   spec.required_ruby_version = ">= 2.6.0"
 
-  spec.metadata["allowed_push_host"] = "https://rubygems.org'"
+  spec.metadata["allowed_push_host"] = "https://rubygems.org"
   spec.metadata["homepage_uri"] = spec.homepage
   spec.metadata["source_code_uri"] = "https://github.com/WillTaylor22/sidekiq_lifecycle_hooks"
   spec.metadata["changelog_uri"] = "https://raw.githubusercontent.com/WillTaylor22/sidekiq_lifecycle_hooks/main/CHANGELOG.md"

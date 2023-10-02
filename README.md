@@ -13,6 +13,8 @@ This approach is generally easier to write and maintain than creating a whole si
 
 ## Installation
 
+Setup [Sidekiq](https://github.com/sidekiq/sidekiq) as your background task runner.
+
 Add this line to your application's Gemfile:
 
 ```ruby
@@ -91,6 +93,7 @@ Errors prevent subsequent methods from running.
 ```
 
 Enqueue mission critical tasks in seperate Sidekiq jobs.
+
 
 ## Contributing
 
