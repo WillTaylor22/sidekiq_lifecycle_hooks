@@ -40,24 +40,23 @@ In each model, replace any synchronous lifecycle hooks with the following:
 ```ruby
 class MyModel < ApplicationRecord
 
-  # Remove these:
+  # Replace these:
   after_create :report_to_analytics
   after_update :something_else
   after_destroy :another_thing
 
-  # Add these:
+  # With these:
   def async_after_create_actions
-    # report_to_analytics
-    # create_child_objects
-    # create_slack_notification
+    report_to_analytics
+    # and_you_can_add_more_than_one ...
   end
 
   def async_after_update_actions
-    # Your after update methods here
+    something_else
   end
 
   def async_after_destroy_actions # READ NOTE BELOW
-    # Your after destroy methods here
+    another_thing
   end
 
 end
