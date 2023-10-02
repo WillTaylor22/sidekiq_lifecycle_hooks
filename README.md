@@ -2,9 +2,9 @@
 
 [![Gem Version](https://badge.fury.io/rb/sidekiq_lifecycle_hooks.svg)](https://badge.fury.io/rb/sidekiq_lifecycle_hooks)
 
-Async model lifecyle hooks for Rails.
+Async model lifecycle hooks for Rails, using Sidekiq.
 
-This Ruby on Rails gem lets you replace `after_create`, `after_update`, and `after_destroy` with asynchronous equivelants, improving performance and decreasing memory usage of your webserver.
+This Ruby on Rails gem lets you replace `after_create`, `after_update`, and `after_destroy` with asynchronous equivelants, improving the performance and decreasing the memory usage of your web server.
 
 Ideal for offloading notifications, analytics, webhooks, large DB writes and anything else that doesn't *need* to delay your response.
 
