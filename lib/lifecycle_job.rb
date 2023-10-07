@@ -3,11 +3,11 @@ class LifecycleJob
   sidekiq_options queue: :default, retry: 1
 
   def perform(class_name, record_id, action, previous_attrs = '{}')
-    record = if action == 'destroy'
+    return unless (record = if action == 'destroy'
                class_name.constantize.new(JSON.parse(previous_attrs))
              else
                class_name.constantize.find_by(id: record_id)
-             end
+             end)
 
     case action
     when 'create'
