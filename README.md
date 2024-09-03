@@ -102,3 +102,11 @@ Bug reports and pull requests are welcome on GitHub at https://github.com/WillTa
 ## License
 
 The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
+
+## Notes to self
+
+To deploy a new version
+- Update the version number & changelog
+- gem build sidekiq_lifecycle_hooks.gemspec
+- gem push sidekiq_lifecycle_hooks-1.X.0.gem
+
