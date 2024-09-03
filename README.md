@@ -109,4 +109,5 @@ To deploy a new version
 - Update the version number & changelog
 - gem build sidekiq_lifecycle_hooks.gemspec
 - gem push sidekiq_lifecycle_hooks-1.X.0.gem
+- push to repo
 
